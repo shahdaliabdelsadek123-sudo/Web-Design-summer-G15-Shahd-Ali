@@ -1,96 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellbeing</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-    <nav>
+    <nav class="navbar navbar-expand-md bg-white py-3">
         <div class="container">
-            <a href="#">
-                <img src="images/Logo (1).png" alt="Wellbeing Logo">
-            </a>
-            <div class="navBar">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+            <a class="navbar-brand" href="#">● Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav gap-md-4">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="hero-section">
-        <div class="container">
-            <h1 class="special-h1">
-                The dawn of a new era in health is here
-            </h1>
-            <p class="special-p">
-                Lorem ipsum dolor sit, amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit blandit facilisis
-            </p>
-            <button>
-                Join now
-            </button>
-            <div class="pics">
-                <div class="w-45">
-                    <img src="images/picture1.png" alt="Yoga">
+    <main>
+        <section class="hero" id="about">
+            <div class="container text-center">
+                <h1>The dawn of a new era in health is here</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit blandit facilisis</p>
+                <a href="#wellbeing" class="main-button">Join now</a>
+
+                <div class="row g-4 hero-images">
+                    <div class="col-md-6">
+                        <img src="images/picture1.png" class="w-100" alt="Meditation">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/picture2.png" class="w-100" alt="Healthy food">
+                    </div>
                 </div>
-                <div class="w-45">
-                    <img src="images/picture2.png" alt="Natural oil">
+            </div>
+        </section>
+
+        <section class="wellbeing section-space" id="wellbeing">
+            <div class="container">
+                <div class="row align-items-center p-4 p-md-5">
+                    <div class="col-lg-8">
+                        <h2>Wellbeing is welldoing</h2>
+                        <div class="row g-4 mt-2">
+                            <div class="col-sm-6">
+                                <div class="small-icon"><i class="fa-solid fa-leaf"></i></div>
+                                <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="small-icon"><i class="fa-solid fa-leaf"></i></div>
+                                <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div>
+                            <img src="images/picture 3.png" class="wellbeing-art w-100" alt="Yoga art" style="object-fit: cover; border-radius: 7px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space" id="services">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img src="images/picture4.png" class="w-100 section-image" alt="Fresh organic produce">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Fresh organic produce</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit blandit facilisis enim risus. Ut tristique eget integer odio nec vulputate consequat. Elit mattis ac in amet sit viverra.</p>
+
+                        <div class="feature-row">
+                            <div class="round-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea</p>
+                        </div>
+                        <div class="feature-row">
+                            <div class="round-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea</p>
+                        </div>
+                        <div class="feature-row">
+                            <div class="round-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wellbeing-start section-space" id="contact">
+            <div class="container">
+                <div class="start-content text-center">
+                    <div class="start-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h2>Wellbeing starts with welldoing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea orci vel elit blandit facilisis enim risus. Ut tristique eget integer odio nec.</p>
+                    <a href="#" class="outline-button">Join now</a>
+                </div>
+
+                <div class="protective-box">
+                    <div class="row text-center g-3">
+                        <div class="col-6 col-md-3 protective-item">
+                            <div><i class="fa-solid fa-leaf"></i></div>
+                            <p>Plant Protective</p>
+                        </div>
+                        <div class="col-6 col-md-3 protective-item">
+                            <div><i class="fa-solid fa-leaf"></i></div>
+                            <p>Plant Protective</p>
+                        </div>
+                        <div class="col-6 col-md-3 protective-item">
+                            <div><i class="fa-solid fa-leaf"></i></div>
+                            <p>Plant Protective</p>
+                        </div>
+                        <div class="col-6 col-md-3 protective-item">
+                            <div><i class="fa-solid fa-leaf"></i></div>
+                            <p>Plant Protective</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-logo">● Logo</div>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <section class="sec2">
-        <div class="container container-light po-rel">
-            <div class="sec2div">
-                <h1 class="special-h1-2">
-                    Wellbeing is welldoing
-                </h1>
-                <div class="d-flex justify-content-between">
-                    <article>
-                        <i class="fa-brands fa-envira leaf"></i>
-                        <br><br>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur.
-                            Quam ut consequat at a. Diam lacus
-                            platea orci vel elit.
-                        </p>
-                    </article>
-                    <article>
-                        <i class="fa-brands fa-envira leaf"></i>
-                        <br><br>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Quam ut
-                            consequat at a. Diam lacus platea orci vel elit.
-                        </p>
-                    </article>
-                </div>
-            </div>
-            <div class="sec2pic po-abs">
-                <img src="images/picture 3.png" alt="Woman doing yoga">
-            </div>
-        </div>
-    </section>
-
-    <section class="marginBottom">
-        <div class="container">
-            <div class="w-45">
-                <img src="images/picture4.png" alt="Organic plant">
-            </div>
-            <div class="w-50">
-                <h1 class="special-h1-2">
-                    Fresh organic produce
-                </h1>
-                <p class="diff">
-                    Lorem ipsum dolor sit amet consectetur. Quam ut
-                    consequat at a. Diam lacus platea orci vel elit blandit facilisis
-                    enim risus. Ut tristique
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
