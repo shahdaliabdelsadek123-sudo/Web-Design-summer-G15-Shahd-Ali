@@ -47,3 +47,20 @@ function looping(startNum, endNum, breakNum, contNum) {
 }
 
 looping(1, 10, 8, 4);
+
+//---------------------------------------------------------------------------------//
+
+
+var courses = ["html", "css", "js"];
+
+var courseName = prompt("Please enter a course:");
+
+if (courseName === "") {
+    alert("Please enter a course name");
+} else if (courses.includes(courseName)) {
+    alert("This course already exists");
+} else {
+    courses.push(courseName);
+    alert("Course added successfully");
+    console.log(courses);
+}
